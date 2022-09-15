@@ -1,0 +1,66 @@
+@use "reset.scss";
+@use "fonts.scss";
+@use "colours.scss";
+@use "nav.scss";
+
+section#portfolio {
+  width: 85%;
+  margin: auto;
+  min-height: 100vh;
+}
+section#portfolio section {
+  overflow: hidden;
+  max-width: 600px;
+  position: relative;
+}
+.carousel__item,
+.carousel__item--hidden {
+  display: none;
+}
+
+.carousel__item {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.carousel__item.item--visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+.carousel__actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+
+#portfolio button {
+  border: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 1.3rem;
+}
+
+section#portfolio img {
+  margin: 0;
+  width: 100%;
+}
+
+section#portfolio img.arrow {
+  width: 15%;
+}

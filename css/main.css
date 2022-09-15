@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+  font-size: 62.5%;
+}
+
+header.main-head {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 2;
+}
+
+.nav {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem 0rem;
+}
+.nav .nav-links {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 1 20rem;
+  transition: transform 1s ease;
+  background: #753ded;
+}
+.nav #logo {
+  flex: 1 1 20rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+}
+.nav #logo span {
+  color: #753ded;
+}
+.nav .nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+}
+.nav .nav-open {
+  transform: translateX(-100%);
+}
+.nav .toggle .line1 {
+  transform: rotateZ(45deg) translateY(300%);
+  background: white;
+}
+.nav .toggle .line2 {
+  opacity: 0;
+}
+.nav .toggle .line3 {
+  transform: rotateZ(-45deg) translateY(-300%);
+  background: white;
+}
+.nav .burger {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.nav .burger span {
+  padding: 0.2rem 2rem;
+  background-color: #753ded;
+  margin: 0.5rem 0rem;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: unset;
+    background: #ffffff;
+  }
+  .nav .nav-links a {
+    font-size: 1.8rem;
+    color: black;
+  }
+  .nav .burger {
+    display: none;
+  }
+}
+section#home {
+  width: 85%;
+  margin: auto;
+  min-height: 100vh;
+}
+
+section#home p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.hero-img {
+  display: block;
+  margin: 2rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+#home button {
+  background-color: #753ded;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  section#home {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  section#home p {
+    font-size: 4rem;
+    line-height: 8rem;
+    color: #000;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    background-color: #ffffff;
+    z-index: 1;
+    border-left: 2rem solid #753ded;
+    padding-left: 2rem;
+  }
+
+  #home picture {
+    grid-column: 3/5;
+    grid-row: 1/4;
+  }
+
+  #home button {
+    height: 20%;
+    grid-row: 3;
+    width: 50%;
+    margin-left: 10%;
+  }
+
+  .hero-img {
+    display: none;
+  }
+}
+section#skills {
+  width: 85%;
+  margin: auto auto 10% auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  gap: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.logo-img {
+  padding: 1rem;
+  margin: 0;
+  width: 75%;
+}
+
+.item-title {
+  grid-column: 1/3;
+}
+
+@media screen and (min-width: 769px) {
+  section#skills {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+  }
+
+  .item-title {
+    grid-column: 1/5;
+  }
+}
+section#portfolio {
+  width: 85%;
+  margin: auto;
+  min-height: 100vh;
+}
+
+section#portfolio section {
+  overflow: hidden;
+  max-width: 600px;
+  position: relative;
+}
+
+.carousel__item,
+.carousel__item--hidden {
+  display: none;
+}
+
+.carousel__item {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.carousel__item.item--visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+
+.carousel__actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+#portfolio button {
+  border: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 1.3rem;
+}
+
+section#portfolio img {
+  margin: 0;
+  width: 100%;
+}
+
+section#portfolio img.arrow {
+  width: 15%;
+}
+
+#contact {
+  width: 85%;
+  margin: auto;
+  min-height: 100vh;
+}
+
+#contact .form-example {
+  margin: 4% 0%;
+  width: 100%;
+}
+
+#contact input,
+textarea {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  width: 100%;
+  border: 1px solid #753ded;
+  padding: 0.4rem;
+}
+
+#contact input[type=submit] {
+  background-color: #753ded;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  #contact {
+    width: 85%;
+    margin: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+  }
+
+  #contact article {
+    width: 80%;
+  }
+
+  #contact article h2 {
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

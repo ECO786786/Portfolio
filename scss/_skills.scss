@@ -1,0 +1,46 @@
+@use "reset.scss";
+@use "fonts.scss";
+@use "colours.scss";
+@use "nav.scss";
+
+section#skills {
+  width: 85%;
+  margin: auto auto 10% auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  gap: 1rem;
+  text-align: center;
+}
+h2 {
+  font-family: fonts.$roboto;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+p {
+  font-family: fonts.$roboto;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.logo-img {
+  padding: 1rem;
+  margin: 0;
+  width: 75%;
+}
+
+.item-title {
+  grid-column: 1 /3;
+}
+
+@media screen and (min-width: 769px) {
+  section#skills {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+  }
+  .item-title {
+    grid-column: 1 /5;
+  }
+}

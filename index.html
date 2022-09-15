@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link />
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="main-head">
+      <nav class="nav">
+        <h1 id="logo">E<span>C</span>O</h1>
+        <ul class="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT ME</a></li>
+        </ul>
+        <div class="burger">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <p>
+          Hey, I’m Emma and I am a Front end developer from London. Available
+          for freelance projects worldwide.
+        </p>
+        <!--<img class="hero-img" src="images/rectangle.svg" alt="" />-->
+        
+          <picture>
+            <source media="(min-width:768px)" srcset="images/laptop2.jpg"/>
+            <source srcset="images/laptop.jpg"/>
+            <img src="images/laptop.jpg" alt="laptop">
+          </picture>
+        <button>CONTACT ME</button>
+      </section>
+      <section id="skills">
+        <h2 class="item-title">Skills</h2>
+        <article class="item-one">
+          <img class="logo-img" src="images/html.svg" alt="html logo" />
+          <p>HTML</p>
+        </article>
+        <article class="item-two">
+          <img class="logo-img" src="images/css.svg" alt="css logo" />
+          <p>CSS</p>
+        </article>
+        <article class="item-three">
+          <img class="logo-img" src="images/sass.svg" alt="sass logo" />
+          <p>SASS</p>
+        </article>
+        <article class="item-four">
+          <img class="logo-img" src="images/js.svg" alt="javascript logo" />
+          <p>JavaScript</p>
+        </article>
+        <article class="item-five">
+          <img class="logo-img" src="images/github.svg" alt="github logo" />
+          <p>GitHub</p>
+        </article>
+        <article class="item-six">
+          <img class="logo-img" src="images/git.svg" alt="git logo" />
+          <p>Git</p>
+        </article>
+        <article class="item-seven">
+          <img class="logo-img" src="images/python.svg" alt="python logo" />
+          <p>Python</p>
+        </article>
+        <article class="item-eight">
+          <img class="logo-img" src="images/react.svg" alt="react logo" />
+          <p>React</p>
+        </article>
+      </section>
+      <section id="portfolio">
+        <h2 class="item-title">Projects</h2>
+        <section>
+        <article class="carousel__item item--visible">
+          <img src="images/rectangle-p.jpg" alt="img" />
+          <p>
+            Project one <br />
+            HTML + CSS
+          </p>
+          <button>
+            View project
+            <img class="arrow" src="images/arrow.svg" alt="arrow" />
+          </button>
+        </article>
+        <article class="carousel__item">
+          <img src="images/rectangle-p.jpg" alt="img" />
+          <p>
+            Project two <br />
+            HTML + CSS + JS
+          </p>
+          <button>
+            View project
+            <img class="arrow" src="images/arrow.svg" alt="arrow" />
+          </button>
+        </article>
+        <div class="carousel__actions">
+          <button id="carousel__button--prev" aria-label="Previous slide"><</button>
+          <button id="carousel__button--next" aria-label="Next slide">></button>
+        </div>
+      </div>
+    </section>
+      </section>
+      <section id="contact">
+        <article>
+          <h2>Lets chat</h2>
+          <p>
+            Don’t be shy, come say hi! Drop me an email via hello@ayodele.com or
+            use the handy little form below:
+          </p>
+        </article>
+        <form action="" method="post" class="main-form">
+          <div class="form-example">
+            <input type="text" name="name" id="name" value="Name" required />
+          </div>
+          <div class="form-example">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value="Email"
+              required
+            />
+          </div>
+          <div class="form-example">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value="Subject"
+              required
+            />
+          </div>
+          <textarea class="form-example" rows="4" cols="50" name="comment">
+Message</textarea
+          >
+          <div class="form-submit">
+            <input type="submit" value="SEND" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="nav.js"></script>
+  </body>
+</html>

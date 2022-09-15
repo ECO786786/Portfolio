@@ -1,0 +1,46 @@
+@use "reset.scss";
+@use "fonts.scss";
+@use "colours.scss";
+@use "nav.scss";
+
+#contact {
+  width: 85%;
+  margin: auto;
+  min-height: 100vh;
+}
+#contact .form-example {
+  margin: 4% 0%;
+  width: 100%;
+}
+
+#contact input,
+textarea {
+  font-family: fonts.$roboto;
+  display: block;
+  width: 100%;
+  border: 1px solid #753ded;
+  padding: 0.4rem;
+}
+#contact input[type="submit"] {
+  background-color: #753ded;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  #contact {
+    width: 85%;
+    margin: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+  }
+
+  #contact article {
+    width: 80%;
+  }
+
+  #contact article h2 {
+    text-align: left;
+  }
+}
