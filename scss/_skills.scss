@@ -17,7 +17,6 @@ h2 {
   font-family: fonts.$roboto;
   font-size: 3.5rem;
   text-align: center;
-  margin-bottom: 2rem;
 }
 p {
   font-family: fonts.$roboto;
@@ -42,5 +41,8 @@ p {
   }
   .item-title {
     grid-column: 1 /5;
+  }
+  h2 {
+    margin: 2rem 0;
   }
 }

@@ -11,12 +11,14 @@ section#home p {
   font-family: fonts.$roboto;
   font-size: 1.6rem;
   line-height: 2.2rem;
+  border-bottom: 1.5rem solid colours.$primary-colour;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .hero-img {
   display: block;
   margin: 2rem 0;
-  //width: 100%;
 }
 
 img {
@@ -26,13 +28,18 @@ img {
 #home button {
   background-color: colours.$primary-colour;
   border: none;
-  color: white;
+  color: colours.$tertiary-colour;
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
   display: block;
   font-size: 1.3rem;
   width: 100%;
+}
+
+#home button a {
+  text-decoration: none;
+  color: colours.$tertiary-colour;
 }
 
 @media screen and (min-width: 769px) {
@@ -45,14 +52,16 @@ img {
   section#home p {
     font-size: 4rem;
     line-height: 8rem;
-    color: #000;
+    color: colours.$secondary-colour;
     grid-column: 1/4;
     grid-row: 2/3;
-    background-color: #ffffff;
+    background-color: colours.$tertiary-colour;
     z-index: 1;
     border-left: 2rem solid colours.$primary-colour;
     padding-left: 2rem;
+    border-bottom: none;
   }
+
   #home picture {
     grid-column: 3/5;
     grid-row: 1/4;

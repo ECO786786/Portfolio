@@ -248,6 +248,9 @@ section#home p {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   line-height: 2.2rem;
+  border-bottom: 1.5rem solid #753ded;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .hero-img {
@@ -262,13 +265,18 @@ img {
 #home button {
   background-color: #753ded;
   border: none;
-  color: white;
+  color: #ffffff;
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
   display: block;
   font-size: 1.3rem;
   width: 100%;
+}
+
+#home button a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 769px) {
@@ -281,13 +289,14 @@ img {
   section#home p {
     font-size: 4rem;
     line-height: 8rem;
-    color: #000;
+    color: #000000;
     grid-column: 1/4;
     grid-row: 2/3;
     background-color: #ffffff;
     z-index: 1;
     border-left: 2rem solid #753ded;
     padding-left: 2rem;
+    border-bottom: none;
   }
 
   #home picture {
@@ -321,7 +330,6 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-size: 3.5rem;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 p {
@@ -348,6 +356,10 @@ p {
 
   .item-title {
     grid-column: 1/5;
+  }
+
+  h2 {
+    margin: 2rem 0;
   }
 }
 section#portfolio {
@@ -383,7 +395,7 @@ section#portfolio section {
   width: 100%;
   justify-content: space-between;
   position: absolute;
-  top: 35%;
+  top: 45%;
   transform: translateY(-50%);
 }
 
@@ -414,6 +426,23 @@ section#portfolio img.arrow {
   width: 15%;
 }
 
+@media screen and (min-width: 769px) {
+  section#portfolio section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: none;
+  }
+
+  form.main-form {
+    margin: 2rem 0;
+  }
+
+  .carousel__item,
+.carousel__item--hidden {
+    display: block;
+  }
+}
 #contact {
   width: 85%;
   margin: auto;
