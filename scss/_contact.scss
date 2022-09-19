@@ -18,11 +18,11 @@ textarea {
   font-family: fonts.$roboto;
   display: block;
   width: 100%;
-  border: 1px solid #753ded;
+  border: 1px solid colours.$primary-colour;
   padding: 0.4rem;
 }
 #contact input[type="submit"] {
-  background-color: #753ded;
+  background-color: colours.$primary-colour;
   color: white;
 }
 

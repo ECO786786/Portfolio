@@ -155,7 +155,7 @@ html {
 header.main-head {
   position: sticky;
   top: 0;
-  background: white;
+  background: #ffffff;
   z-index: 2;
 }
 
@@ -200,14 +200,14 @@ header.main-head {
 }
 .nav .toggle .line1 {
   transform: rotateZ(45deg) translateY(300%);
-  background: white;
+  background: #ffffff;
 }
 .nav .toggle .line2 {
   opacity: 0;
 }
 .nav .toggle .line3 {
   transform: rotateZ(-45deg) translateY(-300%);
-  background: white;
+  background: #ffffff;
 }
 .nav .burger {
   position: relative;
@@ -232,7 +232,7 @@ header.main-head {
   }
   .nav .nav-links a {
     font-size: 1.8rem;
-    color: black;
+    color: #000000;
   }
   .nav .burger {
     display: none;

@@ -11,7 +11,7 @@ html {
 header.main-head {
   position: sticky;
   top: 0;
-  background: white;
+  background: colours.$tertiary-colour;
   z-index: 2;
 }
 .nav {
@@ -59,14 +59,14 @@ header.main-head {
 
   .toggle .line1 {
     transform: rotateZ(45deg) translateY(300%);
-    background: white;
+    background: colours.$tertiary-colour;
   }
   .toggle .line2 {
     opacity: 0;
   }
   .toggle .line3 {
     transform: rotateZ(-45deg) translateY(-300%);
-    background: white;
+    background: colours.$tertiary-colour;
   }
   .burger {
     position: relative;
@@ -89,11 +89,11 @@ header.main-head {
       flex-direction: row;
       justify-content: space-around;
       position: unset;
-      background: #ffffff;
+      background: colours.$tertiary-colour;
     }
     .nav-links a {
       font-size: 1.8rem;
-      color: black;
+      color: colours.$secondary-colour;
     }
     .burger {
       display: none;
