@@ -47,7 +47,7 @@ header.main-head {
     color: colours.$primary-colour;
   }
   .nav-links a {
-    color: #ffffff;
+    color: colours.$tertiary-colour;
     text-decoration: none;
     font-family: fonts.$roboto;
     font-size: 3rem;
@@ -82,7 +82,7 @@ header.main-head {
     transition: all 0.5s ease;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .nav {
     .nav-links {
       display: flex;
@@ -94,6 +94,13 @@ header.main-head {
     .nav-links a {
       font-size: 1.8rem;
       color: colours.$secondary-colour;
+    }
+    a[href="#contact"] {
+      border: 2px solid colours.$primary-colour;
+      padding: 1rem;
+    }
+    .active {
+      background-color: yellow;
     }
     .burger {
       display: none;

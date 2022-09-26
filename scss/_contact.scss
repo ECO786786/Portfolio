@@ -23,7 +23,7 @@ textarea {
 }
 #contact input[type="submit"] {
   background-color: colours.$primary-colour;
-  color: white;
+  color: colours.$tertiary-colour;
 }
 
 @media screen and (min-width: 768px) {

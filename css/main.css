@@ -222,7 +222,7 @@ header.main-head {
   transition: all 0.5s ease;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .nav .nav-links {
     display: flex;
     flex-direction: row;
@@ -233,6 +233,13 @@ header.main-head {
   .nav .nav-links a {
     font-size: 1.8rem;
     color: #000000;
+  }
+  .nav a[href="#contact"] {
+    border: 2px solid #753ded;
+    padding: 1rem;
+  }
+  .nav .active {
+    background-color: yellow;
   }
   .nav .burger {
     display: none;
@@ -307,7 +314,7 @@ img {
   #home button {
     height: 20%;
     grid-row: 3;
-    width: 50%;
+    width: auto;
     margin-left: 10%;
   }
 
@@ -330,6 +337,7 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-size: 3.5rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 p {
@@ -372,6 +380,7 @@ section#portfolio section {
   overflow: hidden;
   max-width: 600px;
   position: relative;
+  margin: 0 auto;
 }
 
 .carousel__item,
@@ -465,7 +474,7 @@ textarea {
 
 #contact input[type=submit] {
   background-color: #753ded;
-  color: white;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
