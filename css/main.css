@@ -443,7 +443,7 @@ section#portfolio img.arrow {
     max-width: none;
   }
 
-  form.main-form {
+  section#portfolio form.main-form {
     margin: 2rem 0;
   }
 
