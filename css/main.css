@@ -239,7 +239,7 @@ header.main-head {
     padding: 1rem;
   }
   .nav .active {
-    background-color: yellow;
+    background-color: #753ded;
   }
   .nav .burger {
     display: none;

@@ -1,6 +1,7 @@
 const nav = document.querySelector(".nav-links");
 const burger = document.querySelector(".burger");
 const links = nav.querySelectorAll("a");
+const homeLinks = document.querySelectorAll(".home-nav");
 
 burger.addEventListener("click", () => {
   nav.classList.toggle("nav-open");
@@ -11,6 +12,22 @@ links.forEach((link) => {
   link.addEventListener("click", () => {
     nav.classList.toggle("nav-open");
     burger.classList.toggle("toggle");
+  });
+});
+
+homeLinks.forEach((homelink) => {
+  homelink.addEventListener("click", () => {
+    let isActive = false;
+    const styles = window.getComputedStyle(homelink);
+    const backgroundColor = styles.backgroundColor;
+    console.log(backgroundColor);
+    if (isActive == false && backgroundColor == "rgba(0, 0, 0, 0)") {
+      homelink.classList.add("active");
+      isActive = true;
+    } else {
+      homeLinks.classList.remove("active");
+      isActive = false;
+    }
   });
 });
 
